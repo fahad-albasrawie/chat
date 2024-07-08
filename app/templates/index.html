@@ -131,21 +131,21 @@
                     Room codes
                 </h5>
 
-                <div class="row ms-2 me-2 mt-3 mb-5">
-                    <div class="col">
+                <div class="row ms-2 me-2 mt-3 mb-5 row-cols-2 row-cols-md-3">
+                    <div class="col mb-3">
                         <span class="badge-primary border rounded p-2 border-primary">
                             <a href="#" id="room1code" onclick="copyTextToClipboard('room1code')">hg-jht-yrqx</a>
                         </span>
                         
                     </div>
-                    <div class="col">
+                    <div class="col mb-3">
                         <span class="badge-primary border rounded p-2 border-primary">
                             <a href="#" id="room2code" onclick="copyTextToClipboard('room2code')">mn-olp-yhgr</a>
                             
                         </span>
                         
                     </div>
-                    <div class="col">
+                    <div class="col mb-3">
                         <span class="badge-primary border rounded p-2 border-primary">
                             <a href="#" id="room3code" onclick="copyTextToClipboard('room3code')">bg-tgf-kos</a>
                         </span>
@@ -161,13 +161,25 @@
                                 aria-describedby="basic-addon2" id="participant_name">
                             <button class="btn btn-outline-secondary text-primary" type="button" id="button-addon2"
                                 onclick="join_game()">Join room</button>
-                            <button class="btn btn-outline-secondary text-danger" type="button" id="button-addon2"
-                                onclick="leave_game()">Leave room</button>
-                            <button class="btn btn-danger" type="button" id="button-addon2"
-                                onclick="end_game()">End</button>
+                            
+                            
                         </div>
+
                     </div>
                 </div>
+
+                <div class="row ms-2 me-2 mt-3 mb-5 row-cols-2 row-cols-md-2">
+                    <div class="col mb-3">
+                        <button class="btn btn-outline-secondary text-danger" type="button" id="button-addon2"
+                                onclick="leave_game()">Leave room</button>
+                    </div>
+                    <div class="col mb-3">
+                        <button class="btn btn-danger" type="button" id="button-addon2"
+                                onclick="end_game()">End</button>
+                        
+                    </div>
+                </div>
+
 
             </div>
 
