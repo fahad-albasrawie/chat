@@ -100,9 +100,6 @@ def join_game(data):
 def reload_participants():
     global my_rooms
     global participant_counts
-
-
-
     socketio.emit('reload_participants',
                   {
 
@@ -149,8 +146,6 @@ def end_game():
                   }
                   # here do not use 'to=' argument to spacify who was the intended recipient
                   )
-
-
 
     print(f'Ending game participants: {room_codes_and_participants}')
 
